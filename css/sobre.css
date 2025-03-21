@@ -1,0 +1,188 @@
+/*===============================================INICIALIZAÇÕES====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    list-style: none;
+}
+
+
+:root {
+    --azul-1: #028DD0;
+    --azul-2: #04328E;
+    --azul-3: #009dff;
+    --vermelho: rgb(251, 4, 4);
+    --botao-laranja: #f19a0e;
+    --branca: #ffffff;
+    --preta: #111111;
+    --texto-title: #555555;
+    --bg-branco-2: #edf2f7;
+    --bg-branco-3: #f2f2f2;
+    --bg-cinza: #f5f5f5;
+    --bg-cinza-2: #d3d7d6;
+    --bg-cinza-3: #888;
+    --opacidade-1: rgba(0, 0, 0, 0.4);
+    --opacidade-2: rgba(0, 0, 0, 0.5);
+    --linha-header: #e1e9ed28;
+    --instagram: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    --whatsapp: #075e54;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+}
+:root {
+    --shadow: 0 4px 4px 0 rgba(25, 67, 182, 0);
+    --shadow-1: 0 1px 0 0 #028bd071;
+    --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+:root {
+    --button-padding: 8px 15px;
+    --button-border-radius: 5px;
+    --card-radius: 10px;
+}
+
+/*===============================================ANIMAÇÃO SCOLL========================================================*/
+.overlay {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.overlay.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*=================================================SOBRE NÓS======================================*/
+
+.sobre {
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 100px;
+}
+
+.sobre .image {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.sobre .image img {
+    height: 150px;
+    width: 200px;
+    border-radius: 40px;
+
+}
+
+.div-sobre-descri {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.div-sobre-descri h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+.div-sobre-descri p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
+.secao-missao {
+    background-color: white;
+    padding-bottom: 20px;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px black;
+}
+
+.secao-missao h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.secao-visao {
+    background-color: white;
+    padding-bottom: 20px;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px black;
+}
+
+.secao-visao h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.secao-valor {
+    background-color: white;
+    padding-bottom: 20px;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px black;
+}
+
+.secao-valor h2 {
+    font-size: 30px;
+    padding-bottom: 0px;
+}
+
+.secao-valor ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.secao-valor ul li {
+    list-style-type: square;
+
+}
+
+
+.mensagem {
+    background-color: #51dbf6;
+}
+
+.secao-mensagem {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.secao-mensagem h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.secao-mensagem p {
+    text-align: center;
+    font-style: italic;
+}
+
+.secao-mensagem span {
+
+    padding: 30px;
+    text-align: center;
+}
+
+/*===================================================NOSSOS CLIENTES===================================================*/
+

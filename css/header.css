@@ -1,0 +1,120 @@
+
+/*===============================================CABEÇALHO========================================================*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--branca) !important;
+    box-shadow: var(--shadow-1);
+    border-bottom: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.menu a {
+    color: var(--preta);
+    padding: 6px 2px;
+    display: block;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu a:hover {
+    border-radius: var(--button-border-radius);
+    padding: var(--button-padding);
+    background: var(--azul-1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.fa-bars {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: var(--preta);
+}
+
+.close-menu {
+    display: none;
+    transition: background all 0.3s ease-in;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100%;
+        background: var(--azul-1);
+
+        padding: 10px;
+        transition: right 0.4s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu a {
+        border-bottom: 2px solid var(--linha-header);
+        opacity: 1;
+        padding: 10px 20px;
+        color: var(--branca);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        color: var(--branca);
+        font-size: 1rem;
+        text-align: right;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+        height: auto;
+        padding: 0;
+    }
+
+    .menu a {
+        border: none;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 480px)
+{
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+}
