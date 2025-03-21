@@ -1,7 +1,7 @@
 /*===================================CONTADOR=======================================*/
 function startCounters() {
   const counters = document.querySelectorAll(".container-estatisticas .estatistica .contador");
-  const limits = [300, 10, 20,40];
+  const limits = [300, 10, 20,1];
 
   counters.forEach((counter, index) => {
     let start = 0;
@@ -14,7 +14,7 @@ function startCounters() {
         clearInterval(interval);
         counter.style.color = "#028DD0";
       }
-      counter.textContent = `+${start}`;
+      counter.textContent = `${start}`;
     }, 35);
   });
 }
